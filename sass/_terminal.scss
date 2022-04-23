@@ -1,0 +1,84 @@
+.terminal {
+    width: calc(99% - 2.4rem);
+    margin: 2.4rem auto;
+    padding: 1rem 2.2rem;
+    background-color: #212836;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    .widgets {
+        display: flex;
+        justify-content: flex-end;
+
+        .circle {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+        .circle-green {
+            background-color: #28c940;
+        }
+        .circle-yellow {
+            background-color: #ffbd2f;
+        }
+        .circle-red {
+            background-color: #ff6057;
+        }
+    }
+
+    pre {
+        code {
+            background-color: transparent;
+            font-family: vazir, Arial, Helvetica, sans-serif;
+        }
+        .initial-project {
+            span:nth-child(9),
+            span:nth-child(10) {
+                background: rgba(255, 255, 255, 0.15);
+                padding: 0.2rem;
+            }
+            span:nth-child(9) {
+                border-radius: 0.6rem 0 0 0.6rem;
+            }
+            span:nth-child(10) {
+                border-radius: 0 0.6rem 0.6rem 0;
+            }
+        }
+    }
+}
+
+/*                          😁😀             */
+
+.terminal-container {
+    display: flex;
+    flex-direction: column;
+}
+/*                          😁😀             */
+
+.t-code::after {
+    content: "";
+    position: absolute;
+    background-color: #CFD8DC;
+    color: rgba(0, 0, 0, 0.6);
+    height: 3rem;
+    width: 8rem;
+    top: 0;
+    left: 0;
+    border-radius: 1.5rem 0 3rem 0;
+    padding: 10px 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.v-js::after{
+    content: "Vanilla JS";
+}
+.jquery::after{
+    content: "JQuery";
+}
+.v-css::after{
+    content: "Vanilla Css ";
+}

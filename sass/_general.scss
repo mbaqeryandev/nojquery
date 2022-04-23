@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+  font-size: 1.6rem;
+    font-family:vazir,Arial, Helvetica, sans-serif;
+    transition: 0.8s;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  ::selection{
+    background: #3BB9FF;
+    color: #fff;
+  }

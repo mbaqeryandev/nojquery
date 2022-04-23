@@ -1,0 +1,33 @@
+footer{
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #353535;
+    margin-top: 2rem;
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top left, #28b487, #7dd56f);
+    word-spacing: 3px;
+    direction: rtl;
+    box-shadow: 0 -1px 7px #353434;
+
+    a{
+        text-decoration:underline inset 5px red;
+        color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        cursor: pointer;
+        
+    }
+    p{
+        font-size: 1.9rem;  
+        user-select: none;
+
+        span{
+            color: #eb2f06;
+            font-size: 5rem;
+        }
+    }
+}

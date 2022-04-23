@@ -1,0 +1,83 @@
+header {
+    padding: 3.6rem 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to top left, #28b487, #7dd56f);
+    box-shadow: 0 1px 7px #353434;
+    transition: 0.8s;
+
+    .titles {
+        display: flex;
+        flex-direction: row-reverse;
+        .texts {
+            direction: rtl;
+            margin-right: 1.2rem;
+            user-select: none;
+
+            h1 {
+                font-size: 2.2rem;
+                transition: all 0.3s;
+            }
+            h1:hover{
+              color: #2196F3;
+              
+            }
+            p {
+                color: #353535;
+            }
+        }
+        .icon {
+            svg {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+
+        
+    }
+
+    .dark-mode {
+        cursor: pointer;
+        width: 7.2rem;
+        height: 3.6rem;
+        border-radius: 4rem;
+        background-color: #252525;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        overflow: hidden;
+        span {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background-color: #fff;
+            margin-right: 0.4rem;
+            position: relative;
+            transition: all 0.6s;
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                background-color: #252525;
+                margin-right: 0.1rem;
+                position: absolute;
+                z-index: 5;
+                top: -1rem;
+                right: 1rem;
+            }
+        }
+    }
+}
+.fixed-c{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    
+}
